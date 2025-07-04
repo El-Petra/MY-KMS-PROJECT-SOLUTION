@@ -2,7 +2,8 @@
 KMS Projection Solution on SQL 
 
 ---- Question 1 - PRODUCT CATEGORY WITH THE HIGHEST SALES -  Using GROUP BY AND ORDER BY
-~~~sql SELECT TOP 1 [Product_Category], SUM(Sales) AS Total_Sales FROM [KMS Sql Case Study 1] GROUP BY [Product_Category]
+
+~~~sqlSELECT TOP 1 [Product_Category], SUM(Sales) AS Total_Sales FROM [KMS Sql Case Study 1] GROUP BY [Product_Category]
 ORDER BY Total_Sales DESC;~~~  
 
 
