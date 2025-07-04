@@ -21,3 +21,13 @@ WHERE [Product_Sub_Category] = 'Appliances' AND Region = 'Ontario';
 SELECT TOP 10 [Customer_Name], SUM(Sales) AS Total_Sales FROM [KMS Sql Case Study 1] GROUP BY [Customer_Name]
 ORDER BY Total_Sales ASC;
 
+---- Question 5 - SHIPPING METHOD WITH THE HIGHEST SHIPPING COST
+SELECT TOP 1 [Ship_Mode], SUM([Shipping_Cost]) AS Total_Shipping_Cost FROM [KMS Sql Case Study 1] 
+GROUP BY [Ship_Mode] 
+ORDER BY Total_Shipping_Cost DESC;
+
+
+--- Question 6a - MOST VALUABLE CUSTOMERS AND THE PRODUCTS THEY PURCHASE
+SELECT TOP 5 [Customer_Name], SUM(Sales) AS Total_Sales FROM [KMS Sql Case Study 1] GROUP BY [Customer_Name] 
+ORDER BY Total_Sales DESC;
+
